@@ -1,0 +1,51 @@
+/* Effective stylesheet produced by snapshot save */
+html, body { margin: 0px; padding: 0px; }
+button { margin: 0px; padding: 0px; border: 0px none; background: none repeat scroll 0% 0% transparent; font-size: 100%; vertical-align: baseline; font-family: inherit; color: inherit; }
+body { font: 14px/1.4em 'Helvetica Neue',Helvetica,Arial,sans-serif; background: url("bg.png") repeat scroll 0% 0% rgb(234, 234, 234); color: rgb(77, 77, 77); width: 550px; margin: 0px auto; }
+#todoapp { background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.9); margin: 130px 0px 40px; border: 1px solid rgb(204, 204, 204); position: relative; border-top-left-radius: 2px; border-top-right-radius: 2px; box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2), 0px 25px 50px 0px rgba(0, 0, 0, 0.15); }
+#todoapp:before { content: ""; border-left: 1px solid rgb(245, 214, 214); border-right: 1px solid rgb(245, 214, 214); width: 2px; position: absolute; top: 0px; left: 40px; height: 100%; }
+#todoapp input:-moz-placeholder { font-style: italic; color: rgb(169, 169, 169); }
+#todoapp h1 { position: absolute; top: -120px; width: 100%; font-size: 70px; font-weight: bold; text-align: center; color: rgba(255, 255, 255, 0.3); text-shadow: -1px -1px rgba(0, 0, 0, 0.2); text-rendering: optimizelegibility; }
+#header { padding-top: 15px; border-radius: inherit; }
+#header:before { content: ""; position: absolute; top: 0px; right: 0px; left: 0px; height: 15px; z-index: 2; border-bottom: 1px solid rgb(108, 97, 92); background: -moz-linear-gradient(center top , rgba(132, 110, 100, 0.8), rgba(101, 84, 76, 0.8)) repeat scroll 0% 0% transparent; border-top-left-radius: 1px; border-top-right-radius: 1px; }
+#new-todo, .edit { position: relative; margin: 0px; width: 100%; font-size: 24px; font-family: inherit; line-height: 1.4em; outline: medium none; color: inherit; padding: 6px; border: 1px solid rgb(153, 153, 153); box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.2) inset; -moz-box-sizing: border-box; }
+#new-todo { padding: 16px 16px 16px 60px; border: medium none; background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.02); z-index: 2; box-shadow: none; }
+#main { position: relative; z-index: 2; border-top: 1px dotted rgb(173, 173, 173); }
+label[for="toggle-all"] { display: none; }
+#toggle-all { position: absolute; top: -42px; left: -4px; width: 40px; text-align: center; border: medium none; }
+#toggle-all:before { content: "»"; font-size: 28px; color: rgb(217, 217, 217); padding: 0px 25px 7px; }
+#toggle-all:checked:before { color: rgb(115, 115, 115); }
+#todo-list { margin: 0px; padding: 0px; list-style: none outside none; }
+#todo-list li { position: relative; font-size: 24px; border-bottom: 1px dotted rgb(204, 204, 204); }
+#todo-list li:last-child { border-bottom: medium none; }
+#todo-list li.editing { border-bottom: medium none; padding: 0px; }
+#todo-list li.editing .edit { display: block; width: 506px; padding: 13px 17px 12px; margin: 0px 0px 0px 43px; }
+#todo-list li.editing .view { display: none; }
+#todo-list li .toggle { text-align: center; width: 40px; height: auto; position: absolute; top: 0px; bottom: 0px; margin: auto 0px; border: medium none; }
+#todo-list li .toggle:after { content: "✔"; line-height: 43px; font-size: 20px; color: rgb(217, 217, 217); text-shadow: 0px -1px 0px rgb(191, 191, 191); }
+#todo-list li .toggle:checked:after { color: rgb(133, 173, 167); text-shadow: 0px 1px 0px rgb(102, 153, 145); bottom: 1px; position: relative; }
+#todo-list li label { padding: 15px; margin-left: 45px; display: block; line-height: 1.2; transition: color 0.4s ease 0s; }
+#todo-list li.completed label { color: rgb(169, 169, 169); text-decoration: line-through; }
+#todo-list li .destroy { display: none; position: absolute; top: 0px; right: 10px; bottom: 0px; width: 40px; height: 40px; margin: auto 0px; font-size: 22px; color: rgb(168, 138, 138); transition: all 0.2s ease 0s ; }
+#todo-list li .destroy:hover { text-shadow: 0px 0px 1px rgb(0, 0, 0), 0px 0px 10px rgba(199, 107, 107, 0.8); transform: scale(1.3); }
+#todo-list li .destroy:after { content: "✖"; }
+#todo-list li:hover .destroy { display: block; }
+#todo-list li .edit { display: none; }
+#todo-list li.editing:last-child { margin-bottom: -1px; }
+#footer { color: rgb(119, 119, 119); padding: 0px 15px; position: absolute; right: 0px; bottom: -31px; left: 0px; height: 20px; z-index: 1; text-align: center; }
+#footer:before { content: ""; position: absolute; right: 0px; bottom: 31px; left: 0px; height: 50px; z-index: -1; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3), 0px 6px 0px -3px rgba(255, 255, 255, 0.8), 0px 7px 1px -3px rgba(0, 0, 0, 0.3), 0px 43px 0px -6px rgba(255, 255, 255, 0.8), 0px 44px 2px -6px rgba(0, 0, 0, 0.2); }
+#todo-count { float: left; text-align: left; }
+#filters { margin: 0px; padding: 0px; list-style: none outside none; position: absolute; right: 0px; left: 0px; }
+#filters li { display: inline; }
+#filters li a { color: rgb(131, 117, 111); margin: 2px; text-decoration: none; }
+#filters li a.selected { font-weight: bold; }
+#clear-completed { float: right; position: relative; line-height: 20px; text-decoration: none; background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.1); font-size: 11px; padding: 0px 10px; border-radius: 3px 3px 3px 3px; box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.2); }
+#clear-completed:hover { background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.15); box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.3); }
+#info { margin: 65px auto 0px; color: rgb(166, 166, 166); font-size: 12px; text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.7); text-align: center; }
+#info a { color: inherit; }
+@media not all {
+  #toggle-all, #todo-list li .toggle { background: none repeat scroll 0% 0% transparent; }
+  #todo-list li .toggle { height: 40px; }
+  #toggle-all { top: -56px; left: -15px; width: 65px; height: 41px; transform: rotate(90deg); }
+}
+.hidden { display: none; }
